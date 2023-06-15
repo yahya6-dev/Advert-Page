@@ -1,0 +1,214 @@
+@media screen and (orientation:landscape){
+
+
+body{
+  margin:0;
+  background-color: rgb(240,240,240);
+  display:grid;
+  grid-template-rows:15vh 70vh 60vh 65vh 8px 40vh 8px 250vh 100vh;
+  grid-template-columns: repeat(10,10vw);
+  grid-row-gap: 16px;
+  overflow-x:none;
+}
+
+form{
+ display:grid;
+ grid-template-columns:repeat(10,10vh);
+ grid-template-rows: 10vh 8px 8px 5vh 2vh 8px 5vh;
+ grid-row-start:9;
+ grid-row-end:9;
+ grid-column-start:1;
+ grid-column-end:11;
+
+}
+#function{
+  margin:8px;
+  grid-column-start:1;
+  grid-column-end:11;
+  grid-row-start:9;
+  grid-row-end:9;
+  color:rgb(60,60,60);
+}
+#function ul li:not(.customized){
+ font-weight:lighter !important;
+}
+#order{
+ width:calc(100% - 8px) !important;
+ text-align:center;
+ outline-width:0 !important;
+}
+#images{
+  margin:8px;
+  grid-column-start:1;
+  grid-column-end:11;
+  grid-row-start:8;
+  grid-row-end:8;
+  
+}
+#img-header{
+ width:100%;
+ height:50%;
+ display:flex;
+ flex-direction:column;
+ margin-bottom:16px;
+}
+
+#img-items{
+ display:flex;
+ flex-direction:row;
+ overflow:scroll;
+}
+#img-items img{
+ width:50%;
+ height:50%;
+ margin-right:8px
+}
+.customize{
+  font-weight: bolder;	
+}
+
+
+#play{
+  padding:8px;
+  background-color:#fc4c4ef0;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start:1;
+  grid-column-end:11;
+  display:inline-grid;
+  grid-template-rows: 5vh 10vh 15vh;
+  grid-template-columns: repeat(11,9vw);
+  grid-row-gap:16px;
+}
+#play-header{
+	margin:8px;
+	background-color:rgba(224,17,95,0.4);
+        bsckground-clip:border-content;
+	justify-self: center;
+	font-weight:lighter;
+	font-size:6vh;
+	grid-column-start:2;
+	grid-column-end:11;
+	grid-row-start:1;
+	grid-row-end:1;
+	color:white;
+}
+.lighter{
+	font-weight: lighter;
+        font-size:5.5vh;
+}
+#play-video{
+        color:white;
+        font-weight:bold;
+        font-size:8vh;
+	margin:8px;
+	grid-row-start:2;
+	grid-row-end:2;
+	grid-column-end:11;
+	grid-column-start:3;
+}
+
+#play-button,#order{
+   border:2px solid rgb(240,240,240);
+   outline-width:0;
+   height:12vh;
+   margin:8px;
+   grid-row-start:3;
+   grid-row-end:3;
+   grid-column-end:9;
+   grid-column-start:4;
+   font-size:6vh;
+   background-color:rgba(250,250,250);
+   color:#fc4c4e;
+   text-align:center;
+   font-weight:bolder;
+   text-align:center;
+   box-shadow:2px 2px 2px rgba(250,250,250,0.2), -2px -2px 2px rgba(250,250,250,0.2),2px 2px 2px rgb(230,100,100) inset, -2px -2px 2px rgb(230,100,100) inset;
+}
+#description{
+	margin:8px;
+        margin-top:16px;
+	grid-column-end:10;
+	grid-column-start:1;
+	grid-row-end:4;
+	grid-row-start:4;
+	font-size:7vh;
+	font-family:sans-serif;
+	font-weight:lighter;
+	color:rgb(30,30,30);
+}
+
+#description ul, #function ul{
+	font-size:5vh !important;
+	font-weight:bold;
+	list-style-type: circle;
+}
+#header{
+	padding:8px;
+	margin:8px;
+	margin-top:16px;
+    font-size:10vh;
+    text-align:center;
+    box-shadow:2px 2px 2px rgba(30,30,30,0.5), -2px -2px 2px rgba(30,30,30,0.5);
+    background-image: linear-gradient(to right,#fc4c4e,rgb(230,100,100));
+    color:white;
+    grid-row-start: 2;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:11; 
+
+}
+
+
+#logo{
+   font-family:cursive;
+   font-size:12vh;
+   display:inline-grid;
+   grid-template-columns: repeat(10,1vh);
+}
+
+#J{
+	color:gray;
+	grid-row-start:1;
+	grid-row-end:1;
+	grid-column-start:1;
+	grid-column-end:2;
+}
+
+#Y, #T, #J {
+	font-weight:bolder;
+}
+#Y{
+	color:rgb(200,200,200);
+}
+#T{
+
+	color:gray;
+	grid-row-start:1;
+	grid-row-end:1;
+	grid-column-start:5;
+	grid-column-end:6;
+}
+
+#icon{
+	grid-row-start:1;
+	grid-row-end:1;
+	grid-column-end:11;
+	grid-column-start:10;
+}
+
+#navbar{
+   display:grid;
+   grid-template-columns: repeat(10,10vw);
+   grid-template-rows: 15vh;
+   background-image: linear-gradient(to left, rgb(240,240,240), rgb(250,250,250));
+   grid-column-start: 1;
+   grid-column-end: 10;
+   grid-row-start:1;
+   grid-row-end:1;
+   border-bottom: 1px solid rgb(200,200,200);
+
+}
+
+
+}
