@@ -5,20 +5,101 @@ body{
   margin:0;
   background-color: rgb(240,240,240);
   display:grid;
-  grid-template-rows:7vh 30vh 30vh 65vh 8px 100vh 150vh 100vh;
+  grid-template-rows:7vh 30vh 30vh 65vh 8px 100vh 122vh 100vh;
   grid-template-columns: repeat(10,10vw);
 
 }
 
-form{
- display:grid;
- grid-template-columns:repeat(10,10vh);
- grid-template-rows: 10vh 8px 8px 5vh 2vh 8px 5vh;
- grid-row-start:8;
- grid-row-end:8;
- grid-column-start:1;
- grid-column-end:10;
+#order-form{
+  margin-top:8px;
+  display:grid;
+  border: 2px dotted rgb(60,60,60);
+  grid-row:8/8;
+  grid-column:1/11;
+  display:grid;
+  grid-template-columns:repeat(10,10vw);
+  grid-template-rows: 2vh 5vh 8px 5vh 8px 4vh 8vh 4vh 8vh 4vh 8vh 4vh 8vh 5vh 10vh;
+}
 
+#pay-text{
+	text-decoration:underline;
+	justify-self:center;
+	grid-row:2/2;
+	font-size:4vh;
+	grid-column:1/11;
+	font-family: sans-serif;
+	color:rgb(100,100,100);
+}
+
+#fill-text{
+  justify-self:center;
+  margin:8px;
+  grid-column:1/11;
+  grid-row:3/3;
+  font-size:4vh;
+  font-weight:500;
+  color:rgb(60,60,60);
+}
+#submit{
+	border-radius: 8px;
+	grid-row:14/14 !important;
+	grid-column:2/10 !important;
+}
+#note{
+	margin:8px;
+	font-size:2vh;
+	font-weight: bolder;
+	color:#fc4c4e;
+	grid-row:15/15;
+	grid-column:2/10;
+}
+label{
+   margin:8px;
+   margin-left:12px;
+   font-size:2.5vh;
+   color:rgba(30,30,30,0.5);
+   font-family:sans-serif;
+}
+input{
+   padding:8px;
+   color:rgba(40,40,40,0.3);
+   font-size:3vh;
+   font-family: sans-serif;
+   outline-width: 0;
+   border-radius: 8px;
+}
+#alt{
+	grid-row:13/13;
+	grid-column:2/10;
+}
+#alt-label{
+	grid-column:2/10;
+	grid-row:12/12;
+}
+#phone{
+	grid-row:11/11;
+	grid-column:2/10;
+}
+#phone-label{
+	grid-row:10/10;
+	grid-column:2/10;
+}
+#address{
+	grid-row:9/9;
+	grid-column:2/10;
+}
+#address-label{
+	grid-row:8/8;
+	grid-column:2/10;
+}
+#name{
+	grid-row:7/7;
+	grid-column: 2/10;
+
+}
+#name-label{
+	grid-row:6/6;
+	grid-column:2/10;
 }
 #function{
   margin:8px;
@@ -108,7 +189,7 @@ form{
 	grid-column-start:3;
 }
 
-#play-button,#order{
+#play-button,#order,#submit{
    outline-width:0;
    border: 2px solid white;
    height:9vh;
