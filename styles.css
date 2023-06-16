@@ -1,3 +1,11 @@
+.animation{
+  transition-property: filter;
+  transition-delay:50ms;
+  transition-timing-function: ease-in;
+  filter: opacity(0.1);
+  transition-duration: 1000ms
+}
+
 @media screen and (orientation:portrait){
 
 
@@ -5,11 +13,22 @@ body{
   margin:0;
   background-color: rgb(240,240,240);
   display:grid;
-  grid-template-rows:7vh 30vh 30vh 65vh 8px 100vh 122vh 100vh;
+  grid-template-rows:7vh 30vh 30vh 75vh 8px 80vh 160vh 100vh 100vh;
   grid-template-columns: repeat(10,10vw);
 
 }
 
+#like{
+  display:flex;
+  flex-direction:column;
+  grid-row:9/9;
+  grid-column:1/10;
+}
+#like img{
+  width:100%;
+  height:50%;
+  margin:8px;
+}
 #order-form{
   margin-top:8px;
   display:grid;
@@ -137,12 +156,14 @@ input{
  display:flex;
  flex-direction:row;
  overflow:scroll;
+ overflow-x:visible;
 }
 #img-items img{
  width:50%;
  height:50%;
  margin-right:4px;
 }
+
 .customize{
   font-weight: bolder;	
 }
