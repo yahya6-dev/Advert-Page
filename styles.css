@@ -13,7 +13,7 @@ body{
   margin:0;
   background-color: rgb(240,240,240);
   display:grid;
-  grid-template-rows:7vh 30vh 30vh 75vh 8px 80vh 160vh 100vh 100vh;
+  grid-template-rows:fit-content(7vh)  fit-content(30vh) fit-content(30vh) fit-content(75vh) 8px fit-content(80vh) fit-content(160vh)  fit-content(100vh) fit-content(100vh);
   grid-template-columns: repeat(10,10vw);
 
 }

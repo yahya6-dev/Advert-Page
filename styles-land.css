@@ -5,7 +5,7 @@ body{
   margin:0;
   background-color: rgb(240,240,240);
   display:grid;
-  grid-template-rows:15vh 70vh 60vh 50vh 8px 60vh 8px 320vh 150vh 10vh 200vh;
+  grid-template-rows:fit-content(15vh) fit-content(70vh) fit-content(60vh)  fit-content(50vh) 8px fit-content(60vh) 8px fit-content(320vh) fit-content(150vh) fit-content(10vh) fit-content(200vh);
   grid-template-columns: repeat(10,10vw);
   grid-row-gap: 16px;
   overflow-x:none;
