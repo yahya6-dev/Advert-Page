@@ -13,9 +13,40 @@ body{
   margin:0;
   background-color: rgb(240,240,240);
   display:grid;
-  grid-template-rows:fit-content(8vh)  fit-content(30vh) fit-content(30vh) fit-content(75vh) 8px fit-content(80vh) fit-content(160vh)  fit-content(100vh) fit-content(100vh);
+  grid-template-rows:8vh  30vh fit-content(30vh) fit-content(75vh) 8px fit-content(80vh) fit-content(160vh)  fit-content(100vh) fit-content(100vh) fit-content(50vh);
   grid-template-columns: repeat(10,10vw);
 
+}
+
+footer{
+  padding:8px;
+  background-image:linear-gradient(to right,rgb(20,20,20),rgb(80,80,80));
+  margin-top:16px;
+  color:white;
+  grid-row:10/10;
+  grid-column:1/11;
+  display:flex;
+  flex-direction: column;
+  font-size:3vh;
+}
+
+#contact{
+  font-size:3vh;
+  text-decoration: underline;
+  justify-self:center;
+}
+footer a{
+  text-decoration:none;
+}
+
+div{
+  font-size:2.5vh;
+  font-weight:lighter;
+}
+footer img{
+  margin-left:8px;
+  height:4vh;
+  height:4vh;
 }
 
 #like{
@@ -182,14 +213,14 @@ input{
   grid-column-start:1;
   grid-column-end:11;
   display:inline-grid;
-  grid-template-rows: 5vh 10vh 15vh;
+  grid-template-rows: 5vh 30vh 10vh;
   grid-template-columns: repeat(11,9vw);
   grid-row-gap:8px;
 }
 #play-header, #price,#per{
 	margin:8px;
 	background-color:rgba(224,17,95,0.4);
-        background-clip:border-content;
+  background-clip:border-content;
 	justify-self: center;
 	font-weight:lighter;
 	font-size:2.5vh;
@@ -218,26 +249,25 @@ input{
         font-size:3vh;
 }
 #play-video{
-        color:white;
-        font-weight:bold;
-        font-size:3vh;
-	margin:8px;
+  background: #fc4c4ef0;
 	grid-row-start:2;
 	grid-row-end:2;
-	grid-column-end:11;
-	grid-column-start:3;
+	grid-column-end:12;
+	grid-column-start:1;
+  justify-self:center;
 }
 
 #play-button,#order,#submit{
+   border-radius:8px;
    outline-width:0;
    border: 2px solid white;
-   height:9vh;
+   height:8vh;
    margin:8px;
    grid-row-start:3;
    grid-row-end:3;
    grid-column-end:12;
    grid-column-start:1;
-   font-size:3vh;
+   font-size:3.5vh;
    background-color:rgba(250,250,250);
    color:#fc4c4e;
    text-align:center;
@@ -310,6 +340,7 @@ input{
 }
 
 #icon{
+  
         justify-self:end;
 	grid-row-start:1;
 	grid-row-end:1;
